@@ -1,0 +1,12 @@
+<section>
+
+    <app-search>
+        <input [(ngModel)]="busqueda" type="search" placeholder="buscar" class="input">
+    </app-search>
+    <main>
+        <app-card *ngFor="let producto of productos | filterProduct:busqueda" [producto]="producto">
+
+        </app-card>
+    </main>
+
+</section>
