@@ -6,6 +6,11 @@
                 <input placeholder="Search" type="search" class="input">
             </app-search>
         </div>
+        <article *ngFor="let item of products | filterProduct:'Classic Bl'">
+            <h1>{{ item.title }}</h1>
+            <p>{{ item.description }}</p>
+            <span>S/.{{ item.price }}</span>
+        </article>
         <app-card></app-card>
         <div style="margin-top: 50px;">
             <app-float-label>
