@@ -25,6 +25,8 @@
     cursor: pointer;
     user-select: none;
     padding: 8px 12px;
+    color: white;
+    text-decoration: none;
     background-color: #181818;
     border-radius: 4px;
     -webkit-border-radius: 4px;

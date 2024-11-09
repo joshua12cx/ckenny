@@ -13,7 +13,7 @@ import { FilterProductPipe } from '../../core/pipe/filter-product.pipe';
 @NgModule({
   declarations: [
     HomeComponent,
-    FilterProductPipe,
+   
   ],
   imports: [
     CommonModule,

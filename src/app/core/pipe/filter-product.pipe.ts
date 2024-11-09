@@ -16,7 +16,8 @@ interface Category {
 }
 
 @Pipe({
-  name: 'filterProduct'
+  name: 'filterProduct',
+  standalone: true,
 })
 export class FilterProductPipe implements PipeTransform {
 
