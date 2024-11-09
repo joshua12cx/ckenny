@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { HeaderComponent } from '../../shared/components/header/header.component';
 import { CardComponent } from '../../shared/components/card/card.component';
 import { FloatLabelComponent } from '../../shared/components/float-label/float-label.component';
+import { SearchComponent } from '../../shared/components/search/search.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FloatLabelComponent } from '../../shared/components/float-label/float-l
     HeaderComponent,
     CardComponent,
     FloatLabelComponent,
+    SearchComponent,
   ]
 })
 export class HomeModule { }
