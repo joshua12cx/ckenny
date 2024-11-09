@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'store-peach';
+  /**
+   * Api
+   * https://fakeapi.platzi.com/en/rest/products/
+   * 
+   * Ejemplo
+   * https://store-peach-ten.vercel.app/
+   */
 }

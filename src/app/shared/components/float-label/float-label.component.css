@@ -1,0 +1,131 @@
+.float-label {
+    display: grid;
+    position: relative;
+    display: block;
+}
+
+.float-label label {
+    padding: 0 0.25rem;
+    position: absolute;
+    left: 0.75rem;
+    font-size: 13px;
+    color: #363636;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.float-label input ~ label,
+.float-label select ~ label {
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.float-label textarea ~ label {
+    top: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.float-label input,
+.float-label textarea,
+.float-label select {
+    outline: none;
+    background-color: white;
+    border: 1px solid #c2c2c2;
+    transition: all .3s;
+    padding: 12px 16px;
+    font-size: 13px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.float-label input::placeholder,
+.float-label textarea::placeholder,
+.float-label select::placeholder {
+    color: transparent;
+}
+
+.float-label input:not(:disabled):not(:focus):hover,
+.float-label textarea:not(:disabled):not(:focus):hover,
+.float-label select:not(:disabled):not(:focus):hover {
+    background-color: #146fb42a;
+    border-color: #1a8fe9bb;
+}
+
+.float-label input:active,
+.float-label textarea:active,
+.float-label select:active {
+    border-color: #146FB4;
+    background-color: white;
+    box-shadow: 0px 0px 4px #001aff80;
+}
+
+.float-label input:active ~ label,
+.float-label textarea:active ~ label,
+.float-label select:active ~ label {
+    color: #146FB4;
+}
+
+.float-label input:disabled,
+.float-label textarea:disabled,
+.float-label select:disabled {
+    cursor: not-allowed;
+    border-color: #949494;
+    background-color: #949494;
+}
+
+.float-label input:disabled ~ label,
+.float-label textarea:disabled ~ label,
+.float-label select:disabled ~ label {
+    width: calc(100% - 32px - 8px);
+    cursor: not-allowed;
+    background-color: #949494;
+}
+
+
+
+.float-label input:focus,
+.float-label textarea:focus,
+.float-label select:focus {
+    box-shadow: 0 4px 6px #1c63f21e;
+    border-color: #146FB4;
+    background-color: white;
+}
+
+.float-label input:focus ~ label,
+.float-label textarea:focus ~ label,
+.float-label select:focus ~ label,
+.float-label input:not(:placeholder-shown) ~ label,
+.float-label textarea:not(:placeholder-shown) ~ label,
+.float-label select:valid ~ label {
+    color: #146FB4;
+    background-color: #fff;
+    top: 0px;
+}
+
+
+.float-label input.ng-invalid.ng-touched {
+    border-color: red;
+    box-shadow: 0px 0px 4px #ff000080;
+}
+
+.float-label input.ng-invalid.ng-touched ~ label {
+    color: red;
+}
